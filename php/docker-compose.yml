@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  app:
+    image: php:7.0-cli
+    env_file: .env
+    volumes:
+      - .:/usr/local/src:ro
